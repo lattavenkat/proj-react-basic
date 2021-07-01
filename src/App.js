@@ -2,23 +2,17 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const name="Latha";
+  const date= new Date(2021,6,29);
+  const tdy = date.toISOString();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className='name'>My Name is: {name}</h1>
+      <h1 className='date'>Today's Date: {tdy}</h1>
+    
     </div>
+    
   );
 }
 
