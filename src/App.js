@@ -1,5 +1,7 @@
-import logo from './logo.svg';
+
 import './App.css';
+import React from 'react';
+import LabelComp from './Component/LabelComp';
 
 function App() {
   const name="Latha";
@@ -8,12 +10,15 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className='name'>My Name is: {name}</h1>
+      {/* <h1 className='name'>My Name is: {name}</h1>
       <h1 className='date'>Today's Date: {tdy}</h1>
-    
-    </div>
-    
+    <hr  />
+   
+    <hr /> */}
+    <LabelComp data={name} today={tdy}/>
+    </div>    
   );
 }
 
 export default App;
+
